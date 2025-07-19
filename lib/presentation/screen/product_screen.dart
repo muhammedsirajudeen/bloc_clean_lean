@@ -1,9 +1,12 @@
-import 'package:bloc_sample_clean/presentation/bloc/product_bloc.dart';
-import 'package:bloc_sample_clean/presentation/bloc/product_event.dart';
-import 'package:bloc_sample_clean/presentation/bloc/product_state.dart';
-import 'package:bloc_sample_clean/usecase/user.dart';
+//core modules
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+//user defined modules
+import '../bloc/product_bloc.dart';
+import '../bloc/product_event.dart';
+import '../bloc/product_state.dart';
+import '../../usecase/user.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({super.key});
