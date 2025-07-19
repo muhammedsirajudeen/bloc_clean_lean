@@ -1,10 +1,11 @@
+import 'package:bloc_sample_clean/core/product_usecase_abstract.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_sample_clean/usecase/user.dart';
 import 'product_event.dart';
 import 'product_state.dart';
 
 class ProductBloc extends Bloc<ProductEvent,ProductState>{
-  final ProductUseCase _productUseCase;
+  final ProductUseCaseAbstract _productUseCase;
 
   ProductBloc(this._productUseCase): super(ProductInitial()){
     on<LoadProductEvent>(_LoadProduct);
